@@ -7,10 +7,7 @@ import br.com.java.model.EmployeeForm;
 
 import java.util.*;
 
-/**
- * author anand.
- * since on 27/5/18.
- */
+
 @Repository
 public class EmployeeDAO {
 
@@ -22,13 +19,15 @@ public class EmployeeDAO {
     }
 
     private static void initEmps() {
-        Employee emp1 = new Employee(1L, "E01", "Smith", "Clerk");
-        Employee emp2 = new Employee(2L, "E02", "Allen", "Salesman");
-        Employee emp3 = new Employee(3L, "E03", "Jones", "Manager");
+        Employee emp1 = new Employee(1L, "C01", "Roberto", "Caixa");
+        Employee emp2 = new Employee(2L, "F05", "Carlos", "Vendedor");
+        Employee emp3 = new Employee(3L, "AB7", "Fábio", "Gerente");
+        Employee emp4 = new Employee(4L, "E39", "Pablo", "Segurança");
 
         empMap.put(emp1.getEmpId(), emp1);
         empMap.put(emp2.getEmpId(), emp2);
         empMap.put(emp3.getEmpId(), emp3);
+        empMap.put(emp4.getEmpId(), emp4);
     }
 
     public Long getMaxEmpId() {

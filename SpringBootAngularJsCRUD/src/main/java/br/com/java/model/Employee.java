@@ -2,10 +2,7 @@ package br.com.java.model;
 
 import lombok.Data;
 
-/**
- * author anand.
- * since on 27/5/18.
- */
+
 @Data
 public class Employee {
 
